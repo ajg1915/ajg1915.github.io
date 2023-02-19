@@ -213,7 +213,7 @@ textarea {
   }
 
   abbr[title]::after {
-    content: " (" attr(MetsXMFanZone) "MetsXMFanZone";
+    content: " (" attr(title) ")";
   }
 
   /*
