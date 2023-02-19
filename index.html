@@ -1,72 +1,80 @@
 <!doctype html>
 <html class="no-js" lang="">
-
+html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title></title>
-  <link rel='stylesheet' href='https://www.live.flexyscore.net/dirette/temp/css/baseball.css'><link rel="stylesheet" href="./style.css">
+  <title>CodePen - Baseball Scores (Responsive Table)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<!-- HERE the original HTML code of the BASEBALL Scoreboard.
-This is the most complex schema!
-
-
-!!!!------ REMEMBER --------!!!!
-on Flexyscore 
-YOU WILL NOT BE ABLE TO MODIFY HTML PART! -->
-<section id="boxes">
-<div class="container containerbaseball">
-    <div class="box boxhometeam" id="team_1">Mets</div>
-    <div class="box boxhomepoints" id="points_1">6</div>
-    <div class="box boxawaypoints" id="points_2">7</div>
-    <div class="box boxawayteam" id="team_2">Astros</div>
-
-<div class="containergamedata">
-    <div class="box boxservice boxhomeservice">
-      <span id="homeservice" class="okservice">
-      <svg class="triangleup" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 7">
-      <polygon points="5,0 0,7 10,7"/>
-      </svg>
-      </span>
-    </div>
-    <div class="box containerinnings">
-    <div class="box boxinnings" id="innings">8</div>
-    <div class="box boxinningslabel"></div>
+<div class="contained-table">
+  <table>
+    <caption>MLB Scoreboard</caption>
+    <thead>
+      <tr>
+        <th>Team</th>
+        <th>1st</th>
+        <th>2nd</th>
+        <th>3rd</th>
+        <th>4th</th>
+        <th>5th</th>
+        <th>6th</th>
+        <th>7th</th>
+        <th>8th</th>
+        <th>9th</th>
+        <th>10th</th>
+        <th>11th</th>
+        <th>Final</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-th="Team">
+          <img src="//www.mlbstatic.com/mlb.com/builds/site-core/6105139ccce70320c674a1c11cbdf1e9d88bfe14_1532366495/images/logos/team-primary-on-light/141.svg" alt="">
+          <span class="short">TOR</span>
+          <span class="long">Toronto Blue Jays</span></td>
+        <td data-th="1st">0</td>
+        <td data-th="2nd">1</td>
+        <td data-th="3rd">0</td>
+        <td data-th="4th">0</td>
+        <td data-th="5th">1</td>
+        <td data-th="6th">0</td>
+        <td data-th="7th">0</td>
+        <td data-th="8th">3</td>
+        <td data-th="9th">0</td>
+        <td data-th="10th">0</td>
+        <td data-th="11th">0</td>
+        <td data-th="Final">6</td>
+      </tr>
+      <tr>
+        <td data-th="Team">
+          <img src="//www.mlbstatic.com/mlb.com/builds/site-core/6105139ccce70320c674a1c11cbdf1e9d88bfe14_1532366495/images/logos/team-cap-on-light/142.svg">
+          <span class="short">NYM</span>
+          <span class="long">New York Mets </span>
+        </td>
+        <td data-th="1st">0</td>
+        <td data-th="2nd">3</td>
+        <td data-th="3rd">0</td>
+        <td data-th="4th">0</td>
+        <td data-th="5th">0</td>
+        <td data-th="6th">1</td>
+        <td data-th="7th">0</td>
+        <td data-th="8th">2</td>
+        <td data-th="9th">0</td>
+        <td data-th="10th">0</td>
+        <td data-th="11th">6</td>
+        <td data-th="Final">12</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
-<div class="box boxservice boxawayservice">
-      <span id="awayservice" class="noservice">
-      <svg class="triangledown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 7">
-      <polygon points="5,7 10,0 0,0 "/>
-      </svg>
-      </span>
-    </div>
-</div>
-      
-    <div class="containerlastrow">
-      <div class="sgrlogo" style="background: url(https://lirp.cdn-website.com/0d4a7773/dms3rep/multi/opt/Main-Logo-325w.png) no-repeat center;"></div>
-      <div class="box containerboxstrikes">
-      <span class="box boxballs" id="balls"></span>
-      <span class="box boxballsstrikesseparator">-</span>
-      <span class="box boxstrikes" id="strikes"></span>
-    </div>
-        
-    <div class="box containerouts">
-      <div class="box boxouts" id="outs">2</div>
-      <div class="box boxouts boxoutslabel">Out</div>
-    </div>
-        
-    <div class="box containerbases">
-      <div class="box boxbases boxon" id="b1"></div>
-      <div class="box boxbases boxon" id="b2"></div>
-      <div class="box boxbases boxbasesoff" id="b3"></div>
-    </div> 
-  </div>                
-</div>
-</section>
 <!-- partial -->
   
 </body>
+</html>
+
 
 </html>
